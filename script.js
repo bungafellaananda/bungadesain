@@ -1,2 +1,0 @@
-let c=0;document.querySelector('.buy').onclick=()=>{document.getElementById('count').textContent=++c;}
-const slides=['slide1.jpg','slide2.jpg','slide3.jpg','slide4.jpg','slide5.jpg'];let i=0;setInterval(()=>{document.getElementById('slide').textContent='Tampilkan: '+slides[i];i=(i+1)%slides.length;},2000);
