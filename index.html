@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7e1f3b">
+  <meta name="description" content="BStar Sleepwear — piyama nyaman untuk malam yang lebih tenang. Temukan koleksi sleepwear favoritmu.">
+  <title>BStar Sleepwear — Comfort Looks Good on You</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="announcement" data-i18n="announcement">A little comfort, a lot of love ✦ Gratis ongkir untuk pesanan tertentu</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="BStar Home">
+      <img src="assets/bstar-logo.png" alt="Logo BStar">
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a href="#collection" data-i18n="navCollection">Collection</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#promo" data-i18n="navPromo">Promo</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <label class="language-select" aria-label="Pilih bahasa">
+        <span>◎</span>
+        <select id="languageSelect">
+          <option value="id">ID</option>
+          <option value="en">EN</option>
+        </select>
+      </label>
+      <button class="icon-button" id="searchToggle" aria-label="Cari produk" title="Cari">⌕</button>
+      <button class="cart-button" id="cartToggle" aria-label="Buka keranjang">
+        <span data-i18n="cart">Bag</span><span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-star">✦</span> SLOW DOWN. SOFTEN UP.</p>
+        <h1 data-i18n="heroTitle">Malam nyaman,<br><em>dimulai dari sini.</em></h1>
+        <p class="hero-text" data-i18n="heroText">Sleepwear lembut yang bikin waktu istirahat terasa lebih istimewa. Karena kamu pantas merasa nyaman, bahkan di hari paling biasa.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#collection" data-i18n="shopNow">Jelajahi koleksi <span>↗</span></a>
+          <a class="text-link" href="#about" data-i18n="ourStory">Cerita BStar <span>→</span></a>
+        </div>
+        <div class="hero-note"><div class="avatar-stack"><span>✿</span><span>♡</span><span>✦</span></div><p><strong data-i18n="softness">Softness you can feel</strong><br><small data-i18n="madeForRest">Dibuat untuk waktu istirahatmu</small></p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrap">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?auto=format&fit=crop&w=1100&q=85" alt="Inspirasi gaya homewear yang nyaman">
+          <div class="image-tag"><span>✦</span><div><strong>REST MODE</strong><small>ON, ALWAYS.</small></div></div>
+        </div>
+        <div class="floating-sticker">stay<br><em>cozy</em> ♡</div>
+        <span class="decor decor-one">✧</span><span class="decor decor-two">✦</span>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Keunggulan BStar">
+      <div><span>✧</span><p data-i18n="benefit1">Nyaman seharian</p></div>
+      <div><span>♡</span><p data-i18n="benefit2">Bahan pilihan</p></div>
+      <div><span>✦</span><p data-i18n="benefit3">Style effortless</p></div>
+      <div><span>☁</span><p data-i18n="benefit4">Soft on your skin</p></div>
+    </section>
+
+    <section class="collection section-pad" id="collection">
+      <div class="section-heading">
+        <div><p class="eyebrow" data-i18n="curated">CURATED FOR YOUR COMFORT</p><h2 data-i18n="collectionTitle">Temukan mood <em>nyamanmu.</em></h2></div>
+        <p class="section-description" data-i18n="collectionText">Pilihan kecil untuk ritual istirahat yang terasa lebih spesial.</p>
+      </div>
+
+      <div class="lookbook" aria-label="BStar sleepwear lookbook">
+        <div class="lookbook-head"><div><p class="eyebrow" data-i18n="lookbookEyebrow">THE BSTAR LOOKBOOK</p><h3 data-i18n="lookbookTitle">Five little ways to <em>feel cozy.</em></h3></div><div class="slider-controls"><button id="slidePrev" aria-label="Foto sebelumnya">←</button><span id="slideCounter">01 / 05</span><button id="slideNext" aria-label="Foto berikutnya">→</button></div></div>
+        <div class="lookbook-window"><div class="lookbook-track" id="lookbookTrack">
+          <div class="lookbook-slide"><img src="https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?auto=format&fit=crop&w=700&q=80" alt="Inspirasi sleepwear nyaman" loading="lazy"><span>01 — SOFT MOMENTS</span></div>
+          <div class="lookbook-slide"><img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=80" alt="Inspirasi piyama bernuansa gelap" loading="lazy"><span>02 — NIGHT IN</span></div>
+          <div class="lookbook-slide"><img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=700&q=80" alt="Inspirasi bahan lembut untuk tidur" loading="lazy"><span>03 — CLOUD SOFT</span></div>
+          <div class="lookbook-slide"><img src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?auto=format&fit=crop&w=700&q=80" alt="Inspirasi gaya santai feminin" loading="lazy"><span>04 — SLOW MORNING</span></div>
+          <div class="lookbook-slide"><img src="https://images.unsplash.com/photo-1608234807905-4466023792f5?auto=format&fit=crop&w=700&q=80" alt="Inspirasi outfit santai di rumah" loading="lazy"><span>05 — EASY DAYS</span></div>
+        </div></div>
+        <div class="slider-dots" id="sliderDots" aria-label="Pilih foto lookbook"></div>
+      </div>
+
+      <div class="search-panel" id="searchPanel">
+        <label for="searchInput" data-i18n="searchLabel">Cari koleksi favoritmu</label>
+        <div class="search-field"><span>⌕</span><input id="searchInput" type="search" placeholder="Cari piyama, set satin..." data-i18n-placeholder="searchPlaceholder"><button id="clearSearch" aria-label="Hapus pencarian">×</button></div>
+      </div>
+      <div class="filter-row" id="filterRow">
+        <button class="filter-chip active" data-filter="all" data-i18n="filterAll">Semua koleksi</button>
+        <button class="filter-chip" data-filter="satin" data-i18n="filterSatin">Satin</button>
+        <button class="filter-chip" data-filter="cotton" data-i18n="filterCotton">Cotton</button>
+        <button class="filter-chip" data-filter="set" data-i18n="filterSet">Matching set</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="satin" data-name="midnight satin set">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=80" alt="Inspirasi set satin warna gelap" loading="lazy"><span class="product-label" data-i18n="labelBestseller">BESTSELLER</span><button class="quick-add" data-product="Midnight Satin Set" data-price="249000" data-i18n="quickAdd">+ Tambah</button></div>
+          <div class="product-info"><div><h3>Midnight Satin Set</h3><p data-i18n="product1Desc">Satin · Relaxed fit</p></div><strong>Rp249.000</strong></div>
+        </article>
+        <article class="product-card" data-category="cotton" data-name="cloud cotton pajamas">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=700&q=80" alt="Inspirasi piyama cotton yang lembut" loading="lazy"><span class="product-label label-new" data-i18n="labelNew">NEW IN</span><button class="quick-add" data-product="Cloud Cotton Pajamas" data-price="219000" data-i18n="quickAdd">+ Tambah</button></div>
+          <div class="product-info"><div><h3>Cloud Cotton Pajamas</h3><p data-i18n="product2Desc">Cotton · Breathable</p></div><strong>Rp219.000</strong></div>
+        </article>
+        <article class="product-card" data-category="set" data-name="weekend lounge set">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=700&q=80" alt="Inspirasi lounge set untuk bersantai" loading="lazy"><button class="quick-add" data-product="Weekend Lounge Set" data-price="229000" data-i18n="quickAdd">+ Tambah</button></div>
+          <div class="product-info"><div><h3>Weekend Lounge Set</h3><p data-i18n="product3Desc">Lounge set · Easy fit</p></div><strong>Rp229.000</strong></div>
+        </article>
+        <article class="product-card" data-category="satin" data-name="rose cloud sleep set">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?auto=format&fit=crop&w=700&q=80" alt="Inspirasi sleepwear bernuansa soft" loading="lazy"><span class="product-label" data-i18n="labelSoftPick">SOFT PICK</span><button class="quick-add" data-product="Rose Cloud Sleep Set" data-price="259000" data-i18n="quickAdd">+ Tambah</button></div>
+          <div class="product-info"><div><h3>Rose Cloud Sleep Set</h3><p data-i18n="product4Desc">Soft touch · Feminine</p></div><strong>Rp259.000</strong></div>
+        </article>
+        <article class="product-card" data-category="cotton" data-name="slow morning shirt">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1608234807905-4466023792f5?auto=format&fit=crop&w=700&q=80" alt="Inspirasi kemeja santai untuk slow morning" loading="lazy"><button class="quick-add" data-product="Slow Morning Shirt" data-price="179000" data-i18n="quickAdd">+ Tambah</button></div>
+          <div class="product-info"><div><h3>Slow Morning Shirt</h3><p data-i18n="product5Desc">Cotton blend · Airy</p></div><strong>Rp179.000</strong></div>
+        </article>
+        <article class="product-card" data-category="set" data-name="soft sunday set">
+          <div class="product-photo"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=700&q=80" alt="Inspirasi set pakaian santai" loading="lazy"><span class="product-label" data-i18n="labelLimited">LIMITED EDITION</span><button class="quick-add" data-product="Soft Sunday Set" data-price="239000" data-i18n="quickAdd">+ Tambah</button></div>
+          <div class="product-info"><div><h3>Soft Sunday Set</h3><p data-i18n="product6Desc">Matching set · Cozy</p></div><strong>Rp239.000</strong></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden data-i18n="noResults">Belum ada produk yang cocok. Coba kata kunci lain, ya.</p>
+      <p class="photo-note" data-i18n="photoNote">Foto inspirasi dari Unsplash. Ganti dengan foto produk asli BStar sebelum mulai berjualan.</p>
+    </section>
+
+    <section class="promo-banner section-pad" id="promo">
+      <div class="promo-copy"><p class="eyebrow" data-i18n="littleTreat">A LITTLE TREAT FOR YOU</p><h2 data-i18n="promoTitle">Self-care starts<br>with <em>soft things.</em></h2><p data-i18n="promoText">Jadikan waktu istirahat sebagai momen paling kamu tunggu.</p><a class="button button-light" href="#collection" data-i18n="seeCollection">Lihat koleksi <span>↗</span></a></div>
+      <div class="promo-art"><div class="promo-circle"></div><img src="https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?auto=format&fit=crop&w=800&q=80" alt="Inspirasi suasana nyaman di rumah" loading="lazy"><span class="promo-spark">✦</span><span class="promo-heart">♡</span></div>
+      <span class="promo-side-note">YOUR DAILY<br>DOSE OF COZY</span>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <div class="about-image"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="Suasana kamar yang hangat dan nyaman" loading="lazy"><div class="about-stamp">REST<br>IS A<br>RITUAL ✦</div></div>
+      <div class="about-copy"><p class="eyebrow" data-i18n="ourPhilosophy">OUR LITTLE PHILOSOPHY</p><h2 data-i18n="aboutTitle">Nyaman bukan<br>sekadar <em>pilihan.</em></h2><p data-i18n="aboutText">BStar percaya bahwa istirahat yang baik dimulai dari hal sederhana. Potongan yang santai, sentuhan lembut, dan desain yang bikin kamu merasa jadi diri sendiri.</p><p data-i18n="aboutText2">Kami ingin menemani momen kecilmu — dari slow morning, movie night, sampai waktu recharge setelah hari yang panjang.</p><a href="#contact" class="text-link" data-i18n="sayHello">Kenalan dengan BStar <span>→</span></a></div>
+    </section>
+
+    <section class="newsletter section-pad">
+      <div><p class="eyebrow" data-i18n="stayCozy">LET'S STAY COZY</p><h2 data-i18n="newsletterTitle">Kabar manis, langsung<br><em>ke inbox kamu.</em></h2></div>
+      <form id="newsletterForm"><label for="emailInput" data-i18n="emailLabel">Alamat email kamu</label><div class="email-field"><input id="emailInput" type="email" placeholder="nama@email.com" required><button type="submit" aria-label="Daftar newsletter">→</button></div><small id="newsletterMessage" data-i18n="newsletterNote">Dengan mendaftar, kamu setuju menerima kabar terbaru dari BStar.</small></form>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-main"><div class="footer-brand"><img src="assets/bstar-logo.png" alt="BStar"><p data-i18n="footerTagline">Comfort looks good on you. ♡</p></div>
+      <div><h4 data-i18n="footerExplore">Explore</h4><a href="#collection" data-i18n="navCollection">Collection</a><a href="#about" data-i18n="navAbout">About</a><a href="#promo" data-i18n="navPromo">Promo</a></div>
+      <div><h4 data-i18n="footerHelp">Need a hand?</h4><a href="#contact" data-i18n="sizeGuide">Panduan ukuran</a><a href="#contact" data-i18n="shipping">Pengiriman & retur</a><a href="#contact" data-i18n="faq">FAQ</a></div>
+      <div><h4 data-i18n="footerSayHi">Say hello</h4><a href="https://wa.me/6282269190930" target="_blank" rel="noopener">WhatsApp ↗</a><a href="mailto:hello@bstar.example">Email ↗</a><p class="tiny-note" data-i18n="replaceNote">Ganti email contoh dengan email tokomu.</p></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> BStar Sleepwear</span><span data-i18n="footerMade">Made for your softer days ♡</span><a href="#home" data-i18n="backTop">Back to top ↑</a></div>
+  </footer>
+
+  <a class="whatsapp-float" id="whatsappFloat" href="https://wa.me/6282269190930?text=Halo%20kak%20aku%20mau%20pesan%20baju%20....%20%2F.....pack%20ya%3B" target="_blank" rel="noopener" aria-label="Chat WhatsApp BStar"><span class="wa-icon">◔</span><span data-i18n="chatWhatsApp">Chat WhatsApp</span></a>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang belanja" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR LITTLE BAG</p><h2 data-i18n="cartTitle">Keranjang belanja</h2></div><button class="close-button" id="cartClose" aria-label="Tutup keranjang">×</button></div>
+    <div class="cart-items" id="cartItems"><p class="empty-cart" data-i18n="emptyCart">Keranjangmu masih kosong. Yuk, cari yang nyaman! ♡</p></div>
+    <div class="cart-footer"><div class="cart-total"><span data-i18n="subtotal">Subtotal</span><strong id="cartTotal">Rp0</strong></div><button class="button button-primary checkout-button" id="checkoutButton" data-i18n="checkout">Pesan via WhatsApp ↗</button><small data-i18n="checkoutNote">Pesanan akan dikonfirmasi melalui WhatsApp.</small></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
